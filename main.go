@@ -15,7 +15,10 @@ func main() {
 
 	fmt.Fscan(r, &a, &b)
 
-	fmt.Fprintln(w, a, b)
-
-	fmt.Println("Odd")
+	switch (a * b) % 2 {
+	case 0:
+		fmt.Println("Even")
+	case 1:
+		fmt.Println("Odd")
+	}
 }
